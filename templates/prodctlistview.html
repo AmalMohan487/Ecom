@@ -51,7 +51,7 @@
                 <h4>Price :<b> {{item.Product_Price}}/-</b></h4>
                 <h4>Brand :<b> {{item.Product_Brand}}</b></h4>
                 <h4><b>Discription : </b> {{item.Product_Discription}}</h4>
-               <button class="btn btn-warning">Add to Cart</button>
+                <a class="btn btn-warning" href="{%url 'AddCart' item.ProductId %}">Add To Cart</a>
 
 
     

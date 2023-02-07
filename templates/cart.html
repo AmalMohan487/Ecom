@@ -44,7 +44,7 @@
                 <div class="col-2 item">Quality</div>
                 <div class="col-2 item"><img src="{{item.product.Product_Image.url}}" style="width: 60px;height: 60px;" alt=""></div>
 
-                <div class="col-2 item"><a href="" class="btn btn-danger">Delete</a></div>
+                <div class="col-2 item"><a href="{%url 'Dele' item.id %}" class="btn btn-danger">Delete</a></div>
             </div>
             {% endfor %}
         </div>

@@ -18,3 +18,8 @@ def AddCart(request,pk):
     cartitem = Cart.objects.create(product = product, numberofitems = 1, user = request.user)
     cartitem.save()
     return redirect('CartView')
+
+def Dele(request,pk):
+    product = Cart.objects.get(id = pk)
+    product.delete()
+    return redirect('CartView')
